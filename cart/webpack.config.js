@@ -44,10 +44,11 @@ module.exports = (_, argv) => ({
       name: "cart",
       filename: "remoteEntry.js",
       remotes: {
-        mainapp:"mainapp@http://localhost:3003/remoteEntry.js"
+        mainapp:"mainapp@http://localhost:3001/remoteEntry.js"
       },
       exposes: {
-        "./Cartadder":"./src/component/Cartadder"
+        "./Cartadder":"./src/component/Cartadder",
+        "./Responseapi":"./src/component/Responseapi"
       },
       shared: {
         ...deps,

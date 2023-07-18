@@ -44,7 +44,7 @@ module.exports = (_, argv) => ({
       name: "header",
       filename: "remoteEntry.js",
       remotes: {
-        mainapp:"mainapp@http://localhost:3003/remoteEntry.js"
+        mainapp:"mainapp@http://localhost:3001/remoteEntry.js"
       },
       exposes: {
         "./Header":"./src/component/Header"
